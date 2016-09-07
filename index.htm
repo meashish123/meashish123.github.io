@@ -9,130 +9,36 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet">
+    <!--<link href="css/flexslider.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Le javascript -->
     <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
+
+    <!--<script src="js/modernizr.custom.js"></script>-->
     <script src="js/Chart.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/graphs.js"></script>
 
-
-    <!-- GOOGLE ANALYTICS -->
-    <!--<script>-->
-    <!--(function (i, s, o, g, r, a, m) {-->
-    <!--i['GoogleAnalyticsObject'] = r;-->
-    <!--i[r] = i[r] || function () {-->
-    <!--(i[r].q = i[r].q || []).push(arguments)-->
-    <!--}, i[r].l = 1 * new Date();-->
-    <!--a = s.createElement(o),-->
-    <!--m = s.getElementsByTagName(o)[0];-->
-    <!--a.async = 1;-->
-    <!--a.src = g;-->
-    <!--m.parentNode.insertBefore(a, m)-->
-    <!--})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
-
-    <!--ga('create', 'UA-41302975-1', 'thomasknickman.com');-->
-    <!--ga('send', 'pageview');-->
-    <!--</script>-->
-    <!--&lt;!&ndash; GOOGLE ANALYTICS &ndash;&gt;-->
-
-
     <style type="text/css" media="all">
 
-        <!--
-        RSS CSS
-
-        -->
-        /* begin styles for RSS Feed */
-
-        .rss-box {
-            width: 300px;
-            background-color: #ffffff;
-
+        .container {
+            width: 90%;
         }
 
-        .rss-title, rss_title a {
-            margin: 0px 0;
-            padding: 0;
-            color: #2e343d;
-
+        .yapiskan {
+            transition: top .5s;
         }
 
-        .rss-items {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            color: #2e343d;
-
+        .gizle {
+            top: -90px;
         }
 
-        .rss-item {
-            font-size: 12;
-            margin-bottom: 1em;;
-            color: #777;
-            font-size: 18px;
+        .sabit {
+            top: 0;
+            z-index: 9999;
         }
 
-        .rss-item a:link, .rss-item a:visited, .rss-item a:active {
-            color: #ee5a28;
-            font-size: 18px;
-
-        }
-
-        .rss-item a:hover {
-            color: #777;
-        }
-
-        /* buttons modeled from http://www.wellstyled.com/css-inline-buttons.html */
-
-        .pod-play {
-            _width: 12em;
-            margin: 0 0.2em;
-            padding: 0.1em 0;
-            _padding: 0;
-
-            white-space: nowrap;
-            text-decoration: none;
-            vertical-align: middle;
-            background: #fb6;
-            color: black;
-        }
-
-        .pod-play em {
-            _width: 1em;
-            _cursor: hand;
-            font-style: normal;
-            margin: 0;
-            padding: 0.1em 0.5em;
-            background: white;
-            color: #222;
-        }
-
-        .pod-play span {
-            _width: 1em;
-            _cursor: hand;
-            margin: 0;
-            padding: 0.1em 0.5em 0.1em 0.3em;
-        }
-
-        .pod-play:hover {
-            background: #666;
-            color: white;
-        }
-
-        .pod-play:hover em {
-            background: black;
-            color: white
-        }
-
-    </style>
-
-    <style>
-        canvas {
-        }
     </style>
 
 
@@ -141,7 +47,7 @@
 
 
 <!-- Header -->
-<header id="header">
+<header id="header" class="yapiskan">
     <div class="container">
         <!-- Logo -->
         <!--<div id="logo">-->
@@ -168,7 +74,11 @@
 <article class="page even" id="intro" style="padding-bottom: 100px; margin-top: -10px;">
 
     <div class="img">
-        <img style="margin:0px auto;display:block" src="img/pictures/name.png" alt="" title=""/>
+        <img style="margin:0 auto 35px auto; display:block" src="img/pictures/avatar.png" alt="" title=""/>
+    </div>
+
+    <div class="img">
+        <img style="margin:0 auto;display:block" src="img/pictures/name.png" alt="" title=""/>
     </div>
 
 </article>
@@ -185,7 +95,7 @@
     </div>
 
     <div class="img">
-        <img style="margin:0px auto;display:block" src="img/pictures/education.png" alt="" title=""/>
+        <img style="margin:0 auto;display:block" src="img/pictures/education.png" alt="" title=""/>
     </div>
 
     </div>
@@ -213,17 +123,17 @@
             <div id="waypoint"></div>
             <div class="widget widget-teaser width-33">
                 <canvas id="canvas1" height="300" width="300"></canvas>
-                JAVA / Node.js
+                <p>JAVA, Node.js</p>
             </div>
 
             <div class="widget widget-teaser width-33">
                 <canvas id="canvas2" height="300" width="300"></canvas>
-                C++ / C / Python
+                <p>C++, C, Python</p>
             </div>
 
             <div class="widget widget-teaser width-33">
                 <canvas id="canvas3" height="300" width="300"></canvas>
-                HTML / CSS / Servlets and JSP
+                <p>HTML, CSS, Servlets and JSP</p>
             </div>
         </div>
     </div>
@@ -295,15 +205,18 @@
             <!--Developed introductory understanding of online advertising and search engine optimization.-->
             <!--</div>-->
             <!--</div>-->
+
             <!-- Item -->
             <div class="widget widget-teaser width-100">
                 <a href="http://www.atekdesign.com" target="_blank"><img src="img/pictures/work-2.png"/></a>
                 <h2 class="widget-title">Software Development Internship</h2>
                 <div class="widget-content">
+
                     May 16 to July 16 <br><br>
 
-                    Aline is a platform that measures code quality and gives a scorecard to a code base. As such,
-                    it covers the 6 axes of code quality: Complexity, Maintainability, Potential Bugs, Comments,
+                    Aline is a platform that measures code quality and gives a scorecard to a code base. <br>
+                    As such, it covers the 6 axes of code quality: Complexity, Maintainability, Potential Bugs,
+                    Comments,
                     Unit Tests, Architecture and Design.
                     <br><br>
                     Implemented two rules in Python and removed the false positives to find all the violations
@@ -311,6 +224,8 @@
 
                     <br><br>
                     TECHNOLOGIES UTILIZED: Python, Scitools Understand, Javalang (Java Parser)
+                    <br><br>
+
                 </div>
             </div>
             <!-- Item -->
@@ -343,19 +258,27 @@
         <p><a style="color: #EE5A28;" target="_blank" href="https://github.com/meashish123/CollabIDE-Client">Collaborative
             IDE</a></p>
         <p style="font-size: 18px;">
-            <a target="_blank" href="https://github.com/meashish123/CollabIDE-Client">goto GitHub</a>
+            <a style="color: #1A94D8;" target="_blank" href="https://github.com/meashish123/CollabIDE-Client">goto
+                GitHub</a>
         </p>
 
-        <p style="font-size: 18px;">While working on large development projects, all software developers eventually find
-            themselves in a
-            position where working in groups appears to be more productive. With software projects involving a
-            multitude of developers this almost becomes a crucial part of project development. A real time
-            collaborative integrated development environment can provide developers with the facility to collaborate
-            over software projects over a network even when developers are thousand of miles away. Real-time
-            Collaborative IDE provide developers with the ability to collaboratively write code, build and test it as
-            well as share their projects with other developers. Chatting with other fellow developers over a project is
-            also possible. Besides several other useful features of a complete IDE including saving snapshots, project
-            management are also provided to ease the entire project development process.</p>
+        <span style="font-size: 18px;">
+            <p>
+                While working on large development projects, all software developers eventually find
+                themselves in a position where working in groups appears to be more productive.
+            </p>
+
+            <p>
+                A real time collaborative integrated development environment can provide developers with the facility
+                to collaborate over software projects over a network even when developers are thousand of miles away.
+            </p>
+
+            <p>
+                Real-time Collaborative IDE provide developers with the ability to collaboratively write code, build
+                and test it as well as share their projects with other developers and hence ease the entire project
+                development process.
+            </p>
+        </span>
         <p style="font-size: 18px;">
             TECHNOLOGIES UTILIZED: JAVA, Node JS, MongoDB
         </p>
@@ -400,7 +323,8 @@
             AI Challenge Judge
         </a></p>
         <p style="font-size: 18px;">
-            <a target="_blank" href="https://github.com/meashish123/AI-Challenge-Judge">goto GitHub</a>
+            <a style="color: #1A94D8;" target="_blank" href="https://github.com/meashish123/AI-Challenge-Judge">
+                goto GitHub</a>
         </p>
 
 
@@ -501,14 +425,14 @@
     <div class="container">
         <div class="page-title"><a href="#top"><h1>Connect With Me</h1></a></div>
         <p>Connect with me through social media and get updates and news.</p>
-        <ul class="connect">
-            <li><a target="_blank" href="https://www.facebook.com/plus.ashish"><img src="img/c-facebook.png"
-                                                                                    alt="Facebook"></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/meashish123"><img src="img/c-linkedin.png"
-                                                                                       alt="LinkedIn"></a></li>
-            <li><a target="_blank" href="https://plus.google.com/107344516472137889951"><img src="img/c-google.png"
-                                                                                             alt="Google Plus"></a></li>
-        </ul>
+        <div class="conntect-div">
+            <div class="width-33"><a target="_blank" href="https://www.facebook.com/plus.ashish"><img src="img/c-facebook.png"
+                                                                                    alt="Facebook"></a></div>
+            <div class="width-33"><a target="_blank" href="https://www.linkedin.com/in/meashish123"><img src="img/c-linkedin.png"
+                                                                                       alt="LinkedIn"></a></div>
+            <div class="width-33"><a target="_blank" href="https://plus.google.com/107344516472137889951"><img src="img/c-google.png"
+                                                                                             alt="Google Plus"></a></div>
+        </div>
     </div>
 </article>
 <!-- #connect -->
@@ -557,7 +481,9 @@
 <script src="js/jquery.localscroll-1.2.7-min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.simplemodal.1.4.3.min.js"></script>
-<script src="js/jquery.tweet.js"></script>
+<!--<script src="js/jquery.tweet.js"></script>-->
 <script src="js/main.js"></script>
+
+
 </body>
 </html>
