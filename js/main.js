@@ -143,4 +143,18 @@ $(function () {
     });
 
 
+    /* -------- Gridder -------- */
+
+    $(".gridder").gridderExpander({
+        scroll: true,
+        scrollOffset: 60,
+        scrollTo: "panel", // panel or listitem
+        animationSpeed: 400,
+        animationEasing: "easeInOutExpo",
+        showNav: true,
+        nextText: "<i class=\"fa fa-arrow-right\"></i>",
+        prevText: "<i class=\"fa fa-arrow-left\"></i>",
+        closeText: "<i class=\"fa fa-times\"></i>",
+    });
+
 });

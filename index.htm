@@ -9,11 +9,19 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.gridder.min.css" rel="stylesheet">
+    <link href="css/jquery.gridder.demo.css" rel="stylesheet">
+
     <!--<link href="css/flexslider.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Le javascript -->
-    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="https://use.fontawesome.com/eda6edefe5.js"></script>
+    <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.gridder.min.js"></script>
 
     <!--<script src="js/modernizr.custom.js"></script>-->
     <script src="js/Chart.js"></script>
@@ -23,7 +31,7 @@
     <style type="text/css" media="all">
 
         .container {
-            width: 90%;
+            width: 80%;
         }
 
         .yapiskan {
@@ -98,7 +106,6 @@
         <img style="margin:0 auto;display:block" src="img/pictures/education.png" alt="" title=""/>
     </div>
 
-    </div>
 </article>
 <!-- #education -->
 
@@ -284,37 +291,66 @@
         </p>
 
         <br>
-        <p style="font-size: 18px;">
-            The IDE looks like this. Its always easy to write code and share it with othere developers.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/collabIde/s1.jpg" alt="" title=""/>
+
+        <ul class="gridder">
+            <li class="gridder-list" data-griddercontent="#content1">
+                <img src="img/pictures/collabIde/s1.jpg" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content2">
+                <img src="img/pictures/collabIde/s2.jpg" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content3">
+                <img src="img/pictures/collabIde/s3.jpg" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content4">
+                <img src="img/pictures/collabIde/s4.jpg" alt="" title=""/>
+            </li>
+        </ul>
+        <div id="content1" class="gridder-content">
+            <img src="img/pictures/collabIde/s1.jpg" alt="" title=""/>
+        </div>
+        <div id="content2" class="gridder-content">
+            <img src="img/pictures/collabIde/s2.jpg" alt="" title=""/>
+        </div>
+        <div id="content3" class="gridder-content">
+            <img src="img/pictures/collabIde/s3.jpg" alt="" title=""/>
+        </div>
+        <div id="content4" class="gridder-content">
+            <img src="img/pictures/collabIde/s4.jpg" alt="" title=""/>
         </div>
 
-        <br>
-        <p style="font-size: 18px;">
-            All settings are available on hamburger menu to the left. Enable/Disable active cursors, notifications as
-            per your need.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/collabIde/s2.jpg" alt="" title=""/>
-        </div>
 
-        <br>
-        <p style="font-size: 18px;">
-            You can browse your projects like this. Shared ones too.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/collabIde/s3.jpg" alt="" title=""/>
-        </div>
+        <!--<p style="font-size: 18px;">-->
+        <!--The IDE looks like this. Its always easy to write code and share it with othere developers.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+        <!--<img style="margin:0px auto;display:block" src="img/pictures/collabIde/s1.jpg" alt="" title=""/>-->
+        <!--</div>-->
 
-        <br>
-        <p style="font-size: 18px;">
-            You can also share your projects with fellow developers !!! Its always easy to collaborate.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/collabIde/s4.jpg" alt="" title=""/>
-        </div>
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+        <!--All settings are available on hamburger menu to the left. Enable/Disable active cursors, notifications as-->
+        <!--per your need.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+        <!--<img style="margin:0px auto;display:block" src="img/pictures/collabIde/s2.jpg" alt="" title=""/>-->
+        <!--</div>-->
+
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+        <!--You can browse your projects like this. Shared ones too.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+        <!--<img style="margin:0px auto;display:block" src="img/pictures/collabIde/s3.jpg" alt="" title=""/>-->
+        <!--</div>-->
+
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+        <!--You can also share your projects with fellow developers !!! Its always easy to collaborate.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+        <!--<img style="margin:0px auto;display:block" src="img/pictures/collabIde/s4.jpg" alt="" title=""/>-->
+        <!--</div>-->
 
 
         <!--<p> --------------------------------------------------------------------- </p>-->
@@ -338,45 +374,78 @@
             TECHNOLOGIES UTILIZED: Node JS, MongoDB, HTML, CSS, Javascript
         </p>
 
-        <br>
-        <p style="font-size: 18px;">
-            The platform looks like this.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/judge/1.PNG" alt="" title=""/>
+        <ul class="gridder">
+            <li class="gridder-list" data-griddercontent="#content5">
+                <img src="img/pictures/judge/1.PNG" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content6">
+                <img src="img/pictures/judge/2.PNG" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content7">
+                <img src="img/pictures/judge/3.PNG" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content8">
+                <img src="img/pictures/judge/4.PNG" alt="" title=""/>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content9">
+                <img src="img/pictures/judge/5.PNG" alt="" title=""/>
+            </li>
+        </ul>
+        <div id="content5" class="gridder-content">
+            <img src="img/pictures/judge/1.PNG" alt="" title=""/>
+        </div>
+        <div id="content6" class="gridder-content">
+            <img src="img/pictures/judge/2.PNG" alt="" title=""/>
+        </div>
+        <div id="content7" class="gridder-content">
+            <img src="img/pictures/judge/3.PNG" alt="" title=""/>
+        </div>
+        <div id="content8" class="gridder-content">
+            <img src="img/pictures/judge/4.PNG" alt="" title=""/>
+        </div>
+        <div id="content9" class="gridder-content">
+            <img src="img/pictures/judge/5.PNG" alt="" title=""/>
         </div>
 
-        <br>
-        <p style="font-size: 18px;">
-            The problem description contains problem statement, input/output format and sample i/o.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/judge/2.PNG" alt="" title=""/>
-        </div>
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+            <!--The platform looks like this.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+            <!--<img style="margin:0px auto;display:block" src="img/pictures/judge/1.PNG" alt="" title=""/>-->
+        <!--</div>-->
 
-        <br>
-        <p style="font-size: 18px;">
-            You can write code in the code Editor.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/judge/3.PNG" alt="" title=""/>
-        </div>
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+            <!--The problem description contains problem statement, input/output format and sample i/o.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+            <!--<img style="margin:0px auto;display:block" src="img/pictures/judge/2.PNG" alt="" title=""/>-->
+        <!--</div>-->
 
-        <br>
-        <p style="font-size: 18px;">
-            You can also view all your submissions anytime
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/judge/4.PNG" alt="" title=""/>
-        </div>
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+            <!--You can write code in the code Editor.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+            <!--<img style="margin:0px auto;display:block" src="img/pictures/judge/3.PNG" alt="" title=""/>-->
+        <!--</div>-->
 
-        <br>
-        <p style="font-size: 18px;">
-            You can also see the whole game progress.
-        </p>
-        <div class="img">
-            <img style="margin:0px auto;display:block" src="img/pictures/judge/5.PNG" alt="" title=""/>
-        </div>
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+            <!--You can also view all your submissions anytime-->
+        <!--</p>-->
+        <!--<div class="img">-->
+            <!--<img style="margin:0px auto;display:block" src="img/pictures/judge/4.PNG" alt="" title=""/>-->
+        <!--</div>-->
+
+        <!--<br>-->
+        <!--<p style="font-size: 18px;">-->
+            <!--You can also see the whole game progress.-->
+        <!--</p>-->
+        <!--<div class="img">-->
+            <!--<img style="margin:0px auto;display:block" src="img/pictures/judge/5.PNG" alt="" title=""/>-->
+        <!--</div>-->
 
         <!--<p> --------------------------------------------------------------------- </p>-->
         <br><br>
@@ -426,12 +495,15 @@
         <div class="page-title"><a href="#top"><h1>Connect With Me</h1></a></div>
         <p>Connect with me through social media and get updates and news.</p>
         <div class="conntect-div">
-            <div class="width-33"><a target="_blank" href="https://www.facebook.com/plus.ashish"><img src="img/c-facebook.png"
-                                                                                    alt="Facebook"></a></div>
-            <div class="width-33"><a target="_blank" href="https://www.linkedin.com/in/meashish123"><img src="img/c-linkedin.png"
-                                                                                       alt="LinkedIn"></a></div>
-            <div class="width-33"><a target="_blank" href="https://plus.google.com/107344516472137889951"><img src="img/c-google.png"
-                                                                                             alt="Google Plus"></a></div>
+            <div class="width-33"><a target="_blank" href="https://www.facebook.com/plus.ashish"><img
+                    src="img/c-facebook.png"
+                    alt="Facebook"></a></div>
+            <div class="width-33"><a target="_blank" href="https://www.linkedin.com/in/meashish123"><img
+                    src="img/c-linkedin.png"
+                    alt="LinkedIn"></a></div>
+            <div class="width-33"><a target="_blank" href="https://plus.google.com/107344516472137889951"><img
+                    src="img/c-google.png"
+                    alt="Google Plus"></a></div>
         </div>
     </div>
 </article>
