@@ -41,7 +41,8 @@ $(function () {
     /* ----- Navigation Scroll ----- */
 
     $('#header nav, .page-title, #copyright').localScroll({
-        offset: {left: 0, top: -99}
+        // offset: {left: 0, top: -99}
+        offset: {left: 0, top: 0}
     });
 
     //Detecting user's scroll
@@ -85,22 +86,6 @@ $(function () {
     });
 
 
-    /* ----- Forms ----- */
-
-    // if (!Modernizr.input.placeholder) {
-    //     $("input, textarea").each(function () {
-    //         if ($(this).val() == "" && $(this).attr("placeholder") != "") {
-    //             $(this).val($(this).attr("placeholder"));
-    //             $(this).focus(function () {
-    //                 if ($(this).val() == $(this).attr("placeholder")) $(this).val("");
-    //             });
-    //             $(this).blur(function () {
-    //                 if ($(this).val() == "") $(this).val($(this).attr("placeholder"));
-    //             });
-    //         }
-    //     });
-    // }
-
 
     /* ----- Modal Window ----- */
 
@@ -118,28 +103,33 @@ $(function () {
 
     /* ----- Hide Header on Scroll Up ----- */
 
-    var cubuk_seviye = $(document).scrollTop();
-    var header_yuksekligi = $('.yapiskan').outerHeight();
+    var topPosPrev = $(document).scrollTop();
+    var header_height = $('.yapiskan').outerHeight();
+    var count = 0;
 
     $(window).scroll(function () {
 
-        var kaydirma_cubugu = $(document).scrollTop();
+        var current = $(document).scrollTop();
 
-        if (kaydirma_cubugu > header_yuksekligi) {
-            $('.yapiskan').addClass('gizle');
+        if (current > header_height) {
+            $('.yapiskan').addClass('hide');
         }
         else {
-            $('.yapiskan').removeClass('gizle');
+            $('.yapiskan').removeClass('hide');
         }
 
-        if (kaydirma_cubugu > cubuk_seviye) {
-            $('.yapiskan').removeClass('sabit');
+        if (current > topPosPrev) {
+            $('.yapiskan').removeClass('show');
+            count = 0;
+        } else {
+            // $('.yapiskan').addClass('show');
+            count++;
         }
-        else {
-            $('.yapiskan').addClass('sabit');
+        if (count > 20) {
+            $('.yapiskan').addClass('show');
         }
 
-        cubuk_seviye = $(document).scrollTop();
+        topPosPrev = $(document).scrollTop();
     });
 
 

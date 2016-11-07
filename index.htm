@@ -58,11 +58,11 @@
             transition: top .5s;
         }
 
-        .gizle {
+        .hide {
             top: -90px;
         }
 
-        .sabit {
+        .show {
             top: 0;
             z-index: 9999;
         }
@@ -71,7 +71,8 @@
 
 
 </head>
-<body id="top">
+
+<body id="top" data-hijacking="off" data-animation="parallax">
 
 
 <!-- Header -->
@@ -99,10 +100,10 @@
 
 
 <!-- Main Image -->
-<article class="page even" id="intro" style="padding-bottom: 100px; margin-top: -10px;">
+<article class="page even" id="intro" style="padding-bottom: 100px; margin-top: -20px;">
 
     <div class="img">
-        <img style="margin:0 auto 35px auto; display:block" src="img/pictures/avatar.png" alt="" title=""/>
+        <img style="height: 300px; margin:0 auto 35px auto; display:block" src="img/pictures/avatar.png" alt="" title=""/>
     </div>
 
     <div class="img">
@@ -573,7 +574,6 @@
 <script src="js/jquery.localscroll-1.2.7-min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.simplemodal.1.4.3.min.js"></script>
-<!--<script src="js/jquery.tweet.js"></script>-->
 <script src="js/main.js"></script>
 
 
