@@ -60,11 +60,11 @@
 
 				var geom = new THREE.Geometry();
 				
-				geom.vertices.push(new THREE.Vector3(vert[0][0], vert[0][1], vert[0][2]));
-				geom.vertices.push(new THREE.Vector3(vert[1][0], vert[1][1], vert[1][2]));
+				geom.vertices.push(new THREE.Vector3(vert[0][0] - 128, vert[0][1]- 128, vert[0][2]));
+				geom.vertices.push(new THREE.Vector3(vert[1][0] - 128, vert[1][1]- 128,  vert[1][2]));
 
 				for (var i = 2; i < vert.length; i++) {	
-					geom.vertices.push(new THREE.Vector3(vert[i][0], vert[i][1], vert[i][2]));
+					geom.vertices.push(new THREE.Vector3(vert[i][0] - 128, vert[i][1] - 128, vert[i][2]));
 				
 					geom.faces.push(new THREE.Face3(i - 2, i - 1, i));
 				}
